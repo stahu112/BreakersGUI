@@ -1,0 +1,3 @@
+[submodule "EngineV2"]
+	path = EngineV2
+	url = https://github.com/stahu112/EngineV2.git
