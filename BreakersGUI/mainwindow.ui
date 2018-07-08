@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1089</width>
-    <height>531</height>
+    <width>1421</width>
+    <height>808</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -33,7 +33,7 @@
      </rect>
     </property>
     <property name="title">
-     <string>GroupBox</string>
+     <string>Details</string>
     </property>
    </widget>
    <widget class="QGroupBox" name="Log">
@@ -46,7 +46,7 @@
      </rect>
     </property>
     <property name="title">
-     <string>GroupBox</string>
+     <string>Log</string>
     </property>
    </widget>
    <widget class="CustomSFMLCanvas" name="SFMLCanvas" native="true">
@@ -59,6 +59,26 @@
      </rect>
     </property>
    </widget>
+   <widget class="CustomSFMLCanvas" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>479</y>
+      <width>1071</width>
+      <height>261</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="CustomSFMLCanvas" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1089</x>
+      <y>9</y>
+      <width>321</width>
+      <height>731</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <widget class="QMenuBar" name="menuBar">
@@ -66,7 +86,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1089</width>
+     <width>1421</width>
      <height>21</height>
     </rect>
    </property>
