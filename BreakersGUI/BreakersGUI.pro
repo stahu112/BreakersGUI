@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -24,19 +24,22 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += \
-        main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+    main.cpp \
+    QSFMLCanvas.cpp \
+    CustomSFMLCanvas.cpp
 
 HEADERS += \
-        mainwindow.h
+        mainwindow.h \
+    QSFMLCanvas.h \
+    CustomSFMLCanvas.h
 
 FORMS += \
         mainwindow.ui
 
 LIBS += -LC:/Sfml/lib
 
-CONFIG += c++11
-CONFIG(release, debug|release): LIBS += -lsfml-audio -lsfml-graphics -lsfml-main -lsfml-network -lsfml-window -lsfml-system
+CONFIG(release, debug|release): LIBS += -lsfml-system -lsfml-window -lsfml-audio -lsfml-graphics -lsfml-main -lsfml-network
 CONFIG(debug, debug|release): LIBS += -lsfml-audio-d -lsfml-graphics-d -lsfml-main-d -lsfml-network-d -lsfml-window-d -lsfml-system-d
 
 INCLUDEPATH += C:/Sfml/include

@@ -6,61 +6,68 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1021</width>
-    <height>629</height>
+    <width>1089</width>
+    <height>531</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QGroupBox" name="SceneObjects">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QGroupBox" name="Details">
     <property name="geometry">
      <rect>
-      <x>749</x>
+      <x>759</x>
       <y>-1</y>
-      <width>261</width>
-      <height>561</height>
+      <width>321</width>
+      <height>471</height>
      </rect>
     </property>
     <property name="title">
      <string>GroupBox</string>
     </property>
    </widget>
-   <widget class="QGroupBox" name="Scene">
+   <widget class="QGroupBox" name="Log">
     <property name="geometry">
      <rect>
       <x>9</x>
-      <y>-1</y>
-      <width>731</width>
-      <height>421</height>
+      <y>349</y>
+      <width>741</width>
+      <height>121</height>
      </rect>
     </property>
     <property name="title">
      <string>GroupBox</string>
     </property>
    </widget>
-   <widget class="QGroupBox" name="Objects">
+   <widget class="CustomSFMLCanvas" name="SFMLCanvas" native="true">
     <property name="geometry">
      <rect>
       <x>9</x>
-      <y>419</y>
-      <width>731</width>
-      <height>141</height>
+      <y>9</y>
+      <width>741</width>
+      <height>341</height>
      </rect>
-    </property>
-    <property name="title">
-     <string>GroupBox</string>
     </property>
    </widget>
   </widget>
+  <widget class="QStatusBar" name="statusBar"/>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1021</width>
-     <height>26</height>
+     <width>1089</width>
+     <height>21</height>
     </rect>
    </property>
   </widget>
@@ -72,9 +79,16 @@
     <bool>false</bool>
    </attribute>
   </widget>
-  <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>CustomSFMLCanvas</class>
+   <extends>QWidget</extends>
+   <header>CustomSFMLCanvas.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>
