@@ -2,13 +2,19 @@
 <ui version="4.0">
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1421</width>
-    <height>808</height>
+    <width>1070</width>
+    <height>568</height>
    </rect>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::NoFocus</enum>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
@@ -23,62 +29,77 @@
    <property name="styleSheet">
     <string notr="true"/>
    </property>
-   <widget class="QGroupBox" name="Details">
-    <property name="geometry">
-     <rect>
-      <x>759</x>
-      <y>-1</y>
-      <width>321</width>
-      <height>471</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string>Details</string>
-    </property>
-   </widget>
-   <widget class="QGroupBox" name="Log">
-    <property name="geometry">
-     <rect>
-      <x>9</x>
-      <y>349</y>
-      <width>741</width>
-      <height>121</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string>Log</string>
-    </property>
-   </widget>
-   <widget class="CustomSFMLCanvas" name="SFMLCanvas" native="true">
-    <property name="geometry">
-     <rect>
-      <x>9</x>
-      <y>9</y>
-      <width>741</width>
-      <height>341</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="CustomSFMLCanvas" name="widget" native="true">
-    <property name="geometry">
-     <rect>
-      <x>9</x>
-      <y>479</y>
-      <width>1071</width>
-      <height>261</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="CustomSFMLCanvas" name="widget_2" native="true">
-    <property name="geometry">
-     <rect>
-      <x>1089</x>
-      <y>9</y>
-      <width>321</width>
-      <height>731</height>
-     </rect>
-    </property>
-   </widget>
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,1">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2" stretch="3,1">
+      <item>
+       <widget class="QTabWidget" name="tabWidget_3">
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <widget class="QWidget" name="Editor">
+         <attribute name="title">
+          <string>Editor</string>
+         </attribute>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="CustomSFMLCanvas" name="SFML1" native="true"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="Game">
+         <attribute name="title">
+          <string>Game</string>
+         </attribute>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="CustomSFMLCanvas" name="SFML2" native="true"/>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <widget class="QWidget" name="Console">
+         <attribute name="title">
+          <string>Console</string>
+         </attribute>
+        </widget>
+        <widget class="QWidget" name="Assets">
+         <attribute name="title">
+          <string>Assets</string>
+         </attribute>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QTabWidget" name="tabWidget_2">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="Properties">
+         <attribute name="title">
+          <string>Properties</string>
+         </attribute>
+        </widget>
+        <widget class="QWidget" name="tab_4">
+         <attribute name="title">
+          <string>Tab 2</string>
+         </attribute>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <widget class="QMenuBar" name="menuBar">
@@ -86,7 +107,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1421</width>
+     <width>1070</width>
      <height>21</height>
     </rect>
    </property>

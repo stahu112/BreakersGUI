@@ -39,3 +39,9 @@ void QSFMLCanvas::paintEvent(QPaintEvent*)
 }
 void QSFMLCanvas::OnInit() {}
 void QSFMLCanvas::OnUpdate() {}
+
+void QSFMLCanvas::reInit()
+{
+    RenderWindow::close();
+    RenderWindow::create((sf::WindowHandle)winId());
+}

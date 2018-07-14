@@ -1,6 +1,7 @@
 #ifndef QSFMLCANVAS_H
 #define QSFMLCANVAS_H
 
+#include <QMainWindow>
 #include <QObject>
 #include <QWidget>
 #include <QTimer>
@@ -18,9 +19,12 @@ public:
     virtual ~QSFMLCanvas();
     virtual void OnInit();
     virtual void OnUpdate();
+
+    void reInit();
+
     private:
-    QTimer myTimer;
     bool myInitialized;
+    QTimer myTimer;
 };
 
 #endif // QSFMLCANVAS_H
